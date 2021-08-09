@@ -16,3 +16,34 @@
 .for-content {
     position: relative;
 }
+
+#content {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-color: rgba(0,0,0,1);
+}
+
+
+#about {
+    padding: 30px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30%;
+}
+
+#menu{
+    padding: 30px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+#contact {
+    padding: 30px;
+    text-align: center;
+    margin-right: 60px;
+}

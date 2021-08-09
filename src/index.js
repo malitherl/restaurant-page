@@ -1,13 +1,11 @@
 const webpage = document.getElementById("content"); 
-const wrap = document.createElement("DIV");
-wrap.setAttribute("class", "demo");
+webpage.setAttribute("class", "demo");
 
 const image = document.createElement("IMG");
 image.setAttribute("class", "bg");
 image.setAttribute("src", "https://cdn.pixabay.com/photo/2015/10/12/15/11/cafe-984275_960_720.jpg");
 image.setAttribute("alt", "a picuture of a cafe");
-wrap.appendChild(image);
-webpage.appendChild(wrap);
+webpage.appendChild(image);
 
 const textArea = document.createElement("DIV");
 textArea.setAttribute("id", "for-text");
@@ -28,6 +26,7 @@ restaurantTitling.style.borderRadius= "25px";
 restaurantTitling.style.textAlign= "Center";
 restaurantTitling.textContent= "Workaday Cafe";
 
+//styled in css now 
 const restaurantSubTitling= document.createElement("h2");
 restaurantSubTitling.style.padding= "30px";
 restaurantSubTitling.style.textAlign= "center";
@@ -35,6 +34,7 @@ restaurantSubTitling.style.borderRadius= "25px";
 restaurantSubTitling.textContent = "About";
 restaurantSubTitling.style.marginRight= "30px";
 restaurantSubTitling.style.marginLeft= "30%";
+
 
 const restaurantSubTitling1= document.createElement("h2");
 restaurantSubTitling1.style.padding= "30px";
@@ -75,11 +75,17 @@ contactPage.style.display ="none";
 
 
 textArea.appendChild(restaurantTitling);
-textArea.appendChild(restaurantSubTitling);
-
-textArea.appendChild(restaurantSubTitling1);
-textArea.appendChild(restaurantSubTitling2);
 
 
 
-wrap.appendChild(textArea);
+webpage.appendChild(textArea);
+
+
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
