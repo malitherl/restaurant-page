@@ -1,6 +1,6 @@
 const webpage = document.getElementById("content"); 
 
-document.body.style.backgroundImage= "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F91%2FTom%27s_Restaurant%252C_Manhattan.jpg&f=1&nofb=1')";
+
 
 const textArea = document.createElement("DIV");
 textArea.setAttribute("id", "for-text");
@@ -11,19 +11,15 @@ textArea.style.padding= "20px";
 
 textArea.style.margin = "5px";
 textArea.style.fontFamily= "Georgia, Garamond,Times New Roman";
-
+textArea.style.color = "blue";
 
 const restaurantTitling = document.createElement("h1");
-restaurantTitling.style.color= "rgb(255,250,240)";
 restaurantTitling.style.padding= "25px";
 restaurantTitling.style.borderRadius= "25px";
-
 restaurantTitling.style.textAlign= "Center";
-
 restaurantTitling.textContent= "Tom's Restaurant";
 
 const restaurantSubTitling= document.createElement("h2");
-restaurantSubTitling.style.color= "rgb(255,250,240)";
 restaurantSubTitling.style.padding= "30px";
 restaurantSubTitling.style.textAlign= "center";
 restaurantSubTitling.style.borderRadius= "25px";
@@ -32,7 +28,6 @@ restaurantSubTitling.style.marginRight= "30px";
 restaurantSubTitling.style.marginLeft= "30%";
 
 const restaurantSubTitling1= document.createElement("h2");
-restaurantSubTitling1.style.color= "rgb(255,250,240)";
 restaurantSubTitling1.style.padding= "30px";
 restaurantSubTitling1.style.marginRight= "30px";
 restaurantSubTitling1.style.textAlign= "center";
@@ -40,18 +35,34 @@ restaurantSubTitling1.textContent = "Menu";
 restaurantSubTitling1.style.marginRight= "30px";
 
 const restaurantSubTitling2= document.createElement("h2");
-restaurantSubTitling2.style.color= "rgb(255,250,240)";
 restaurantSubTitling2.style.padding= "30px";
 restaurantSubTitling2.style.textAlign= "center";
 restaurantSubTitling2.textContent = "Contact Us";
 restaurantSubTitling2.style.marginRight= "30px";
 
 
+const aboutPage = document.createElement("DIV");
+aboutPage.setAttribute("id", "about");
+aboutPage.style.display ="none";
+const aboutTextTitle = document.createElement("h2");
+aboutTextTitle.textContent = "About Us";
+const aboutTextBlurb = document.createElement("p");
 
-const blurb = document.createElement("DIV");
 
-const blurb_text = document.createElement("p");
-blurb_text.textContent = "Family owned and run, we at Tom's Restaurant remain the old-fashioned diner style restaurant to this day."
+const menuPage = document.createElement("DIV");
+menuPage.setAttribute("id", "about");
+menuPage.style.display ="none";
+const menuTextTitle = document.createElement("h2");
+menuTextTitle.textContent = "Contact Us";
+const menuTextBlurb = document.createElement("p");
+menuTextBlurb.textContent = "tomsrestaurant@yahoo.com";
+const menuTextBlurb1 = document.createElement("p");
+menuTextBlurb1.textContent = "+1-212-864-6137";
+
+
+const contactPage = document.createElement("DIV");
+contactPage.setAttribute("id", "about");
+contactPage.style.display ="none";
 
 
 textArea.appendChild(restaurantTitling);
