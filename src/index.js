@@ -1,9 +1,17 @@
 const webpage = document.getElementById("content"); 
+const wrap = document.createElement("DIV");
+wrap.setAttribute("class", "demo");
 
-
+const image = document.createElement("IMG");
+image.setAttribute("class", "bg");
+image.setAttribute("src", "https://cdn.pixabay.com/photo/2015/10/12/15/11/cafe-984275_960_720.jpg");
+image.setAttribute("alt", "a picuture of a cafe");
+wrap.appendChild(image);
+webpage.appendChild(wrap);
 
 const textArea = document.createElement("DIV");
 textArea.setAttribute("id", "for-text");
+textArea.setAttribute("class", "for-content");
 
 textArea.style.display= "flex";
 textArea.style.justifyContent= "center";
@@ -11,13 +19,14 @@ textArea.style.padding= "20px";
 
 textArea.style.margin = "5px";
 textArea.style.fontFamily= "Georgia, Garamond,Times New Roman";
-textArea.style.color = "blue";
+textArea.style.color = "white";
 
 const restaurantTitling = document.createElement("h1");
 restaurantTitling.style.padding= "25px";
+restaurantTitling.style.marginLeft= "10px";
 restaurantTitling.style.borderRadius= "25px";
 restaurantTitling.style.textAlign= "Center";
-restaurantTitling.textContent= "Tom's Restaurant";
+restaurantTitling.textContent= "Workaday Cafe";
 
 const restaurantSubTitling= document.createElement("h2");
 restaurantSubTitling.style.padding= "30px";
@@ -72,4 +81,5 @@ textArea.appendChild(restaurantSubTitling1);
 textArea.appendChild(restaurantSubTitling2);
 
 
-webpage.appendChild(textArea);
+
+wrap.appendChild(textArea);
