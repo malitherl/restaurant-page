@@ -4,7 +4,7 @@
 }
 
 .bg {
-  opacity: 0.7;
+  opacity: 0.5;
   position: absolute;
   left: 0;
   top: 0;
@@ -15,6 +15,20 @@
 
 .for-content {
     position: relative;
+}
+
+.barButton {
+    padding: 30px;
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: white;
+
+
 }
 
 #content {
@@ -46,3 +60,4 @@
     text-align: center;
     margin-right: 60px;
 }
+
