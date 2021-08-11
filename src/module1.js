@@ -83,6 +83,7 @@ function generate() {
         
         const pageContent = document.createElement("DIV");
         pageContent.setAttribute("id", "word");
+        pageContent.setAttribute("class", "text");
         buttons.appendChild(barButton1);
         buttons.appendChild(barButton2);
         buttons.appendChild(barButton3);
