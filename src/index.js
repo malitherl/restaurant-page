@@ -18,6 +18,7 @@ function tabs(i){
       break;
   }
 }
+
 const listButtons = document.getElementsByTagName("BUTTON");
 console.log(listButtons);
   for(let i =0; i<listButtons.length ; i++){
